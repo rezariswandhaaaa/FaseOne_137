@@ -29,11 +29,11 @@ class DetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Nama: $nama',),
-            Text('Nomor Telepon: $telepon'),
-            Text('Makanan: $makanan'),
-            Text('Minuman: $minuman'),
-            Text('Dessert: $dessert'),
+            Text('Nama: $nama',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+            Text('Nomor Telepon: $telepon',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+            Text('Makanan: $makanan',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+            Text('Minuman: $minuman',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
+            Text('Dessert: $dessert',style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25)),
             const SizedBox(
               height: 20,
             ),
