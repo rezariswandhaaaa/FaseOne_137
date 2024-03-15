@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ucp1/widget/header_makanan.dart';
 
 class MakananScreen extends StatefulWidget {
   const MakananScreen({super.key, required this.nama, required this.telepon});
@@ -18,6 +19,7 @@ class _MakananScreenState extends State<MakananScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            HeaderMakanan(),
             Text('Nama : ${widget.nama}'),
             Text('Nomor Telepon : ${widget.telepon}')
           ],

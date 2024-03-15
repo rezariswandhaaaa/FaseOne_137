@@ -36,7 +36,6 @@ class DaftarScreen extends StatelessWidget {
                               telepon: telp.text,
                             )),
                   );
-
                   ScaffoldMessenger.of(context)
                       .showSnackBar(SnackBar(content: Text("Daftar Berhasil")));
                 }
