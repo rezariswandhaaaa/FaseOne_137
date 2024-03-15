@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class FormMakanan extends StatefulWidget {
-  const FormMakanan({super.key, required this.formkey, required this.etDesert});
+  const FormMakanan({super.key, required this.formkey, required this.etDesert, required this.etMkn, required this.etMinum});
 
   final GlobalKey<FormState> formkey;
+  final TextEditingController etMkn;
+  final TextEditingController etMinum;
   final TextEditingController etDesert;
 
   @override
@@ -18,6 +20,7 @@ class _FormMakananState extends State<FormMakanan> {
         child: Column(
           children: [
             TextFormField(
+              controller: widget.etMkn,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
                 labelText: 'Makanan',
@@ -37,6 +40,7 @@ class _FormMakananState extends State<FormMakanan> {
             ),
             const SizedBox(height: 10),
             TextFormField(
+              controller: widget.etMinum,
               keyboardType: TextInputType.text,
               decoration: InputDecoration(
                 labelText: 'Minuman',
