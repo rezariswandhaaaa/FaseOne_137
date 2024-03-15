@@ -26,6 +26,7 @@ class _FormDaftarState extends State<FormDaftar> {
       child: Column(
         children: [
           TextFormField(
+            controller: widget.etNama,
             keyboardType: TextInputType.name,
             decoration: InputDecoration(
               labelText: 'Nama',
@@ -45,6 +46,7 @@ class _FormDaftarState extends State<FormDaftar> {
           ),
           const SizedBox(height: 10),
           TextFormField(
+            controller: widget.etTelepon,
             keyboardType: TextInputType.number,
             decoration: InputDecoration(
               labelText: 'Nomor telepon',
